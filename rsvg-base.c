@@ -266,6 +266,8 @@ rsvg_standard_element_start (RsvgHandle * ctx, const char *name, RsvgPropertyBag
         newnode = rsvg_new_group ();
     else if (!strcmp (name, "text"))
         newnode = rsvg_new_text ();
+    else if (!strcmp (name, "textPath"))
+        newnode = rsvg_new_text_path ();
     else if (!strcmp (name, "tspan"))
         newnode = rsvg_new_tspan ();
     else if (!strcmp (name, "tref"))
